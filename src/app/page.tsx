@@ -387,6 +387,122 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-slate-50 py-12 sm:py-16 border-t border-slate-200/60">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="font-display text-2xl font-extrabold text-brand-night sm:text-4xl">
+              Deliverables — <span className="text-brand-amber text-shadow-sm">₹19,999 Package</span>
+            </h2>
+            <p className="mt-2 text-slate-500 max-w-xl mx-auto text-sm font-medium">
+              A complete breakdown of what you get with our high-performance chatbot website.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Website Development */}
+            <div className="relative p-6 rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md group">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-night text-brand-amber text-xl group-hover:rotate-6 transition">
+                <ion-icon name="code-working"></ion-icon>
+              </div>
+              <h3 className="text-lg font-bold text-brand-night mb-3 tracking-tight">Website Development</h3>
+              <ul className="space-y-2 text-slate-600 text-xs font-semibold">
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Custom-designed business website</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Up to 20 pages</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Fully responsive (mobile, tablet, desktop)</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Modern, conversion-focused design</li>
+              </ul>
+            </div>
+
+            {/* Performance & Technology */}
+            <div className="relative p-6 rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md group">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-night text-brand-amber text-xl group-hover:rotate-6 transition">
+                <ion-icon name="flash"></ion-icon>
+              </div>
+              <h3 className="text-lg font-bold text-brand-night mb-3 tracking-tight">Performance & Tech</h3>
+              <ul className="space-y-2 text-slate-600 text-xs font-semibold">
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Built on React</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Fast loading & optimized performance</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> SEO-friendly structure</li>
+              </ul>
+            </div>
+
+            {/* Chatbot Integration */}
+            <div className="relative p-6 rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md group">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-night text-brand-amber text-xl group-hover:rotate-6 transition">
+                <ion-icon name="chatbubbles"></ion-icon>
+              </div>
+              <h3 className="text-lg font-bold text-brand-night mb-3 tracking-tight">Chatbot Integration</h3>
+              <ul className="space-y-2 text-slate-600 text-xs font-semibold">
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> WhatsApp / Chatbot integration</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Auto-response for enquiries</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Lead capture setup</li>
+              </ul>
+            </div>
+
+            {/* Domain, Hosting & Security */}
+            <div className="relative p-6 rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md group">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-night text-brand-amber text-xl group-hover:rotate-6 transition">
+                <ion-icon name="globe"></ion-icon>
+              </div>
+              <h3 className="text-lg font-bold text-brand-night mb-3 tracking-tight">Hosting & Security</h3>
+              <ul className="space-y-2 text-slate-600 text-xs font-semibold">
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Domain (1 year)</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Hosting (1 year)</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> SSL security (HTTPS enabled)</li>
+              </ul>
+            </div>
+
+            {/* Integrations */}
+            <div className="relative p-6 rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md group">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-night text-brand-amber text-xl group-hover:rotate-6 transition">
+                <ion-icon name="link"></ion-icon>
+              </div>
+              <h3 className="text-lg font-bold text-brand-night mb-3 tracking-tight">Integrations</h3>
+              <ul className="space-y-2 text-slate-600 text-xs font-semibold">
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Social media integration</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> WhatsApp chat button</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Forms with enquiry alerts</li>
+              </ul>
+            </div>
+
+            {/* Deployment & Support */}
+            <div className="relative p-6 rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md group">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-night text-brand-amber text-xl group-hover:rotate-6 transition">
+                <ion-icon name="cloud-upload"></ion-icon>
+              </div>
+              <h3 className="text-lg font-bold text-brand-night mb-3 tracking-tight">Launch & Support</h3>
+              <ul className="space-y-2 text-slate-600 text-xs font-semibold">
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Website live on your domain</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> Tested across all devices</li>
+                <li className="flex items-center gap-2.5"><ion-icon name="checkmark-circle" className="text-emerald-500 text-lg"></ion-icon> 7 days post-delivery support</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Delivery Timeline & Disclaimer */}
+          <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-6 px-6 py-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-night text-brand-amber shadow-inner">
+                <ion-icon name="time" className="text-2xl"></ion-icon>
+              </div>
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Project Timeline</p>
+                <h4 className="text-xl font-black text-brand-night">Ready in 7 working days</h4>
+              </div>
+            </div>
+            
+            <div className="bg-amber-50 px-5 py-3 rounded-xl border border-brand-amber/20 max-w-sm">
+              <div className="flex items-start gap-2.5">
+                <ion-icon name="alert-circle" className="text-brand-amber text-lg shrink-0 mt-0.5"></ion-icon>
+                <p className="text-[11px] leading-relaxed text-amber-900 font-bold">
+                  <span className="uppercase">Disclaimer:</span> Content must be provided by the client. Advanced custom logic or third-party paid features are not included.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-brand-night py-14 text-white">
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">Get your website live in as little as 3 days.</h2>
