@@ -523,18 +523,6 @@ export default function Home() {
         </p>
       </footer>
 
-      <div className="sticky-cta" role="region" aria-label="Quick enquiry actions">
-        <div className="sticky-cta-inner">
-          <button type="button" onClick={() => openModal('Get a Quote')} className="sticky-cta-btn sticky-cta-primary">
-            <ion-icon name="document-text-outline"></ion-icon>
-            <span>Request a Quote</span>
-          </button>
-          <button type="button" onClick={() => openModal('Request a Call Back')} className="sticky-cta-btn sticky-cta-secondary">
-            <ion-icon name="call-outline"></ion-icon>
-            <span>Request Call Back</span>
-          </button>
-        </div>
-      </div>
 
       <div className={`modal-overlay ${!isModalOpen ? 'hidden' : ''}`} role="dialog" aria-modal="true" aria-labelledby="quoteTitle" onClick={(e) => { if (e.target === e.currentTarget) closeModal() }}>
         <div className="modal-card">
