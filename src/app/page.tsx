@@ -252,7 +252,7 @@ export default function Home() {
                 <div className="glass-card"><ion-icon name="flash-outline"></ion-icon>Fast Delivery & Support</div>
               </div>
               <div className="mt-7 grid max-w-md grid-cols-1 gap-3 sm:grid-cols-1">
-                <a href="#pricing" className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-4 py-3 text-sm font-bold text-white transition hover:bg-white/20"><ion-icon name="pricetag-outline"></ion-icon>View Prices</a>
+                <a href="#portfolio" className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-4 py-3 text-sm font-bold text-white transition hover:bg-white/20"><ion-icon name="briefcase-outline"></ion-icon>View Portfolio</a>
               </div>
             </div>
           </div>
@@ -269,32 +269,118 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="pricing" className="bg-gradient-to-b from-amber-50 via-white to-slate-100 py-16">
+      <section id="pricing" className="bg-gradient-to-b from-amber-50 via-white to-slate-100 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-amber-900">
+              <ion-icon name="chatbubbles"></ion-icon> Professional & Fast
+            </span>
+            <h2 className="mt-4 font-display text-4xl font-extrabold text-brand-night sm:text-5xl">
+              Website <span className="text-slate-500">with</span>{' '}
+              <span className="text-brand-amber">Chatbot</span>
+            </h2>
+          </div>
+
           <div className="mx-auto max-w-5xl">
-            <article className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl sm:flex sm:items-center sm:justify-between sm:p-8 lg:p-12">
-              <div className="absolute top-0 right-0 -mr-16 -mt-16 h-64 w-64 rounded-full bg-brand-amber/20 blur-3xl" aria-hidden="true"></div>
-              
-              <div className="relative p-6 sm:p-0 sm:w-2/3">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-amber-900">
-                  <ion-icon name="star"></ion-icon> Custom Solutions
-                </span>
-                <h3 className="mt-4 font-display text-3xl font-extrabold text-brand-night sm:text-4xl">Tailored Website Development</h3>
-                <p className="mt-4 text-base text-slate-600 leading-relaxed max-w-xl">Get a high-performing website built specifically for your business goals. Featuring bespoke UI/UX, SEO-ready architecture, and seamless lead integrations.</p>
-                <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-700">
-                  <span className="flex items-center gap-2"><ion-icon className="text-brand-amber text-xl" name="checkmark-circle"></ion-icon> Conversion Focused</span>
-                  <span className="flex items-center gap-2"><ion-icon className="text-brand-amber text-xl" name="checkmark-circle"></ion-icon> Mobile First & Responsive</span>
-                  <span className="flex items-center gap-2"><ion-icon className="text-brand-amber text-xl" name="checkmark-circle"></ion-icon> Lightning Fast Speeds</span>
+            <article className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl">
+              {/* Decorative blobs */}
+              <div className="absolute top-0 right-0 -mr-20 -mt-20 h-72 w-72 rounded-full bg-brand-amber/20 blur-3xl" aria-hidden="true"></div>
+              <div className="absolute bottom-0 left-0 -ml-16 -mb-16 h-56 w-56 rounded-full bg-amber-300/10 blur-3xl" aria-hidden="true"></div>
+
+              <div className="relative grid md:grid-cols-5 gap-0">
+                {/* Left: Price & Highlights */}
+                <div className="md:col-span-2 flex flex-col items-center justify-center bg-gradient-to-br from-brand-night via-[#111c33] to-[#0a0f1a] p-8 sm:p-10 text-white text-center rounded-t-3xl md:rounded-t-none md:rounded-l-3xl">
+                  <p className="text-sm font-semibold uppercase tracking-wider text-amber-200">Starting at</p>
+                  <p className="mt-2 text-5xl sm:text-6xl font-black leading-none">
+                    <span className="text-3xl align-top text-amber-300">₹</span>19,999
+                  </p>
+                  <div className="mt-6 space-y-2 w-full max-w-xs">
+                    <div className="flex items-center gap-2.5 rounded-xl bg-white/10 px-4 py-2.5 text-sm font-semibold backdrop-blur-sm">
+                      <ion-icon name="checkmark-circle" className="text-brand-amber text-lg shrink-0"></ion-icon>
+                      Hosting Included
+                    </div>
+                    <div className="flex items-center gap-2.5 rounded-xl bg-white/10 px-4 py-2.5 text-sm font-semibold backdrop-blur-sm">
+                      <ion-icon name="checkmark-circle" className="text-brand-amber text-lg shrink-0"></ion-icon>
+                      1 Year Domain + Hosting
+                    </div>
+                  </div>
+                  <button type="button" onClick={() => openModal('Website with Chatbot - ₹19,999')} className="mt-8 w-full max-w-xs inline-flex items-center justify-center gap-2 rounded-full bg-brand-amber px-6 py-4 text-[15px] font-bold text-slate-900 transition-all hover:-translate-y-1 hover:brightness-110 hover:shadow-xl focus:ring-4 focus:ring-amber-300">
+                    <ion-icon name="chatbubble-ellipses-outline" className="text-lg"></ion-icon> Get Started Now
+                  </button>
                 </div>
-              </div>
-              
-              <div className="relative flex flex-col items-center border-t border-slate-100 bg-slate-50 p-6 sm:w-1/3 sm:shrink-0 sm:border-t-0 sm:border-l sm:bg-transparent sm:p-0 sm:pl-8 sm:text-center mt-0 sm:mt-0">
-                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Investment</p>
-                <p className="mt-1 text-3xl font-black text-brand-night">Custom</p>
-                <p className="mt-2 text-xs text-slate-500 text-center">Formulated on your specific scope & requirements</p>
-                <button type="button" onClick={() => openModal('Request Custom Quote')} className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-full bg-brand-night px-6 py-4 text-[15px] font-bold text-white transition-all hover:-translate-y-1 hover:bg-slate-800 hover:shadow-lg focus:ring-4 focus:ring-slate-300">
-                  <ion-icon name="document-text-outline" className="text-lg"></ion-icon> Get a Custom Quote
-                </button>
+
+                {/* Right: Feature Stack */}
+                <div className="md:col-span-3 p-6 sm:p-8 lg:p-10">
+                  <h3 className="font-display text-xl font-bold text-brand-night mb-6">Everything You Get</h3>
+                  <div className="space-y-4">
+                    {/* Feature 1 */}
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-600 text-xl">
+                        <ion-icon name="globe-outline"></ion-icon>
+                      </div>
+                      <div>
+                        <p className="font-bold text-slate-800">Domain + Hosting</p>
+                        <p className="text-xs text-slate-500">(1 Year)</p>
+                      </div>
+                    </div>
+                    {/* Feature 2 */}
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600 text-xl">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                      </div>
+                      <div>
+                        <p className="font-bold text-slate-800">SSL Security</p>
+                      </div>
+                    </div>
+                    {/* Feature 3 */}
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-600 text-xl">
+                        <ion-icon name="settings-outline"></ion-icon>
+                      </div>
+                      <div>
+                        <p className="font-bold text-slate-800">Admin Dashboard</p>
+                      </div>
+                    </div>
+                    {/* Feature 4 */}
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-violet-100 text-violet-600 text-xl">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                      </div>
+                      <div>
+                        <p className="font-bold text-slate-800">Chatbot Integration</p>
+                      </div>
+                    </div>
+                    {/* Feature 5 */}
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-rose-100 text-rose-600 text-xl">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                      </div>
+                      <div>
+                        <p className="font-bold text-slate-800">Social Media Integration</p>
+                      </div>
+                    </div>
+                    {/* Feature 6 */}
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-600 text-xl">
+                        <ion-icon name="logo-react"></ion-icon>
+                      </div>
+                      <div>
+                        <p className="font-bold text-slate-800">Built on React</p>
+                      </div>
+                    </div>
+                    {/* Feature 7 */}
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-600 text-xl">
+                        <ion-icon name="flash-outline"></ion-icon>
+                      </div>
+                      <div>
+                        <p className="font-bold text-slate-800">Fast Loading</p>
+                        <p className="text-xs text-slate-500">Within 3 Sec</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </article>
           </div>
